@@ -25,7 +25,19 @@
         /**
          * Sorunun cevabını bu yorumdan sonra yazınız.
          */
-
+        var hesapBtn=document.getElementById("hesapla")
+        hesapBtn.onclick=function(){
+  var sayi=document.getElementById("sayi").value;
+  sayi=Number(sayi);
+if(sayi%2==0)
+{
+window.alert(sayi+" sayisi çift sayıdır.");
+}
+else
+{ 
+window.alert(sayi+" sayisi tek sayıdır.");
+}
+}
     </script>
     <div class="clearfix"></div>
 </div>
