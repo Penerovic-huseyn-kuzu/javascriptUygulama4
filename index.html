@@ -21,14 +21,11 @@
             Çevre = <span id="cevre"></span>
             <script type="text/javascript">
                 document.getElementById('cevreHesapla').addEventListener('click', cevreHesapla);
-                /**
-                 * Yukarıdaki satır, id'si cevreHesapla olan butona tıklandığında cevreHesapla() fonksiyonunun çalışmasını sağlamaktadır.
-                 * cevreHesapla() fonksiyonun amacı name değeri "cebmerYaricap" olan input'dan yarıcap verisini alarak çemberin çevresini hesaplamak ve bu değeri id değeri cevre olan <span> etiketine yazdırmaktır.
-                 * Çemberin çevresi 2πr formülü ile hesaplanır.
-                 *
-                 * Aşağıda içeriği boş olan fonksiyonu amacına uygun şekilde yazınız.
-                 */
-                function cevreHesapla() {
+              
+                var cemberyaricap =Number(document.getElementById("cemberyaricap").value); 
+                
+                var cevre=2*3.14*cemberyaricap;
+                   document.write( cevre );
                 }
             </script>
         </div>
@@ -46,15 +43,11 @@
         <div class="cevap">
             Alan = <span id="alan"></span>
             <script type="text/javascript">
-                document.getElementById('alanHesapla').addEventListener('click', alanHesapla);
-                /**
-                * Yukarıdaki satır, id'si alanHesapla olan butona tıklandığında alanHesapla() fonksiyonunun çalışmasını sağlamaktadır.
-                * alanHesapla() fonksiyonun amacı name değeri "daireYaricap" olan input'dan yarıcap verisini alarak dairenin alanını hesaplamak ve bu değeri id değeri alan olan <span> etiketine yazdırmaktır.
-                * Dairenin alanı πr^2 formülü ile hesaplanır. (^ işareti üst anlamına gelir.)
-                *
-                * Aşağıda içeriği boş olan fonksiyonu amacına uygun şekilde yazınız.
-                */
-                function alanHesapla() {
+        
+                var yaricap =Number(document.getElementById("yaricap").value);
+                
+                     var dairealani=3.14*daireyaricap*daireyaricap;
+                   document.write( dairealani );
                 }
             </script>
         </div>
@@ -73,13 +66,12 @@
             Hacim = <span id="hacim"></span>
             <script type="text/javascript">
                 document.getElementById('hacimHesapla').addEventListener('click', hacimHesapla);
-                /**
-                 * Yukarıdaki satır, id'si hacimHesapla olan butona tıklandığında hacimHesapla() fonksiyonunun çalışmasını sağlamaktadır.
-                 * hacimHesapla() fonksiyonun amacı name değeri "kureYaricap" olan input'dan yarıcap verisini alarak kürenin hacmini hesaplamak ve bu değeri id değeri hacim olan <span> etiketine yazdırmaktır.
-                 * Kürenin hacmi ((πr^3)4)/3 formülü ile hesaplanır. (^ işareti üst anlamına gelir.)
-                 *
-                 * Aşağıda içeriği boş olan fonksiyonu amacına uygun şekilde yazınız.
-                 */
+          
+                
+                var kureyaricap =Number(document.getElementById("kureyaricap").value); 
+                var hacmi=((3.14*kureyaricap*kureyaricap*kureyaricap)*4)/3
+                document.write( hacmi );
+                
                 function hacimHesapla() {
                 }
             </script>
